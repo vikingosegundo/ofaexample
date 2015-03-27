@@ -6,31 +6,35 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C70EE8E3-F842-43F6-9426-807564B77367</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OFAExample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4DD15F4DE51640A2DB74200CFB0D21CC41ACF8C2</key>
-		<string>https://github.com/vikingosegundo/OFAPopulator.git</string>
+		<key>DADA42FEBA85C8323C183F0AA6420524CAF240B5</key>
+		<string>https://github.com/vikingosegundo/ofaexample.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OFAExample.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4DD15F4DE51640A2DB74200CFB0D21CC41ACF8C2</key>
-		<string>OFAPopulator/</string>
+		<key>DADA42FEBA85C8323C183F0AA6420524CAF240B5</key>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/vikingosegundo/OFAPopulator.git</string>
+	<string>https://github.com/vikingosegundo/ofaexample.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4DD15F4DE51640A2DB74200CFB0D21CC41ACF8C2</string>
+	<string>DADA42FEBA85C8323C183F0AA6420524CAF240B5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4DD15F4DE51640A2DB74200CFB0D21CC41ACF8C2</string>
+			<string>DADA42FEBA85C8323C183F0AA6420524CAF240B5</string>
 			<key>IDESourceControlWCCName</key>
-			<string>OFAPopulator</string>
+			<string>ofaexample</string>
 		</dict>
 	</array>
 </dict>

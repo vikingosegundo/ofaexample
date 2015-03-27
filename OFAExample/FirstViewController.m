@@ -10,7 +10,7 @@
 #import <ofapopulator/OFAViewPopulator.h>
 #import <ofapopulator/OFASectionPopulator.h>
 
-#import "ColorDataFetcher.h"
+#import "ColorDataProvider.h"
 
 @interface FirstViewController ()
 
@@ -24,9 +24,9 @@
     [super viewDidLoad];
     
     OFASectionPopulator *colorPopulator = [[OFASectionPopulator alloc] initWithParentView:self.tableView
-                                                                              dataFetcher:[[ColorDataFetcher alloc] init]
+                                                                             dataProvider:[[ColorDataProvider alloc] init]
                                                                            cellIdentifier:^NSString *(id obj, NSIndexPath *indexPath) {
-                                                                               return @"ColorCell";
+                                                                               return @ "ColorCell";
                                                                            } cellConfigurator:^(UIColor *color, UITableViewCell *cell, NSIndexPath *indexPath) {
                                                                                [cell.contentView setBackgroundColor:color];
                                                                            }];

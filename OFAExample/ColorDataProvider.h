@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <OFAPopulator/OFADataFetcher.h>
+#import <OFAPopulator/OFADataProvider.h>
 
-@interface ColorDataFetcher : NSObject <OFADataFetcher>
+@interface ColorDataProvider : NSObject <OFADataProvider>
 
 @end

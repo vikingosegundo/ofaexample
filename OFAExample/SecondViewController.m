@@ -7,7 +7,7 @@
 //
 
 #import "SecondViewController.h"
-#import "ColorDataFetcher.h"
+#import "ColorDataProvider.h"
 #import <OFAPopulator/OFASectionPopulator.h>
 #import <OFAPopulator/OFAViewPopulator.h>
 
@@ -22,9 +22,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    ColorDataFetcher *colorDataFetcher = [[ColorDataFetcher alloc] init];
+    ColorDataProvider *colorDataProvider = [[ColorDataProvider alloc] init];
     OFASectionPopulator *sectionPopulator = [[OFASectionPopulator alloc] initWithParentView:self.collectionView
-                                                                                dataFetcher:colorDataFetcher
+                                                                                dataProvider:colorDataProvider
                                                                              cellIdentifier:^(id obj, NSIndexPath *indexPath){
                                                                                  return @"CellSectionColor";
                                                                              }

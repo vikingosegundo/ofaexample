@@ -7,16 +7,16 @@
 //
 
 
-#import "ColorDataFetcher.h"
+#import "ColorDataProvider.h"
 
-@interface ColorDataFetcher ()
+@interface ColorDataProvider ()
 @property (strong, nonatomic) NSArray *colors;
 @end
 
-@implementation ColorDataFetcher
+@implementation ColorDataProvider
 @synthesize sectionObjects = _sectionObjects;
 
--(void)fetchSuccess:(void (^)(void))success
+-(void)dataAvailable:(void (^)(void))available
 {
     
     NSMutableArray *colors = [@[] mutableCopy];
@@ -25,13 +25,7 @@
     }
     
     self.sectionObjects = colors;
-    success();
+    available();
 }
-
--(void)fetchedData:(id)obj onDataFetcher:(id<OFADataFetcher>)dataFetcher
-{
-    
-}
-
 
 @end

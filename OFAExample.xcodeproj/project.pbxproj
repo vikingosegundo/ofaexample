@@ -15,7 +15,7 @@
 		643863F51AB78733004C84A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 643863F41AB78733004C84A9 /* Images.xcassets */; };
 		643863F81AB78733004C84A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 643863F61AB78733004C84A9 /* LaunchScreen.xib */; };
 		643864041AB78733004C84A9 /* OFAExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 643864031AB78733004C84A9 /* OFAExampleTests.m */; };
-		6438641A1AB78F61004C84A9 /* ColorDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 643864191AB78F61004C84A9 /* ColorDataFetcher.m */; };
+		6438641A1AB78F61004C84A9 /* ColorDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 643864191AB78F61004C84A9 /* ColorDataProvider.m */; };
 		8495FA4A0EF1E9E74B56B2E6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D23770D165C63AB224A9F06 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +46,8 @@
 		643863FD1AB78733004C84A9 /* OFAExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OFAExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		643864021AB78733004C84A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		643864031AB78733004C84A9 /* OFAExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OFAExampleTests.m; sourceTree = "<group>"; };
-		643864181AB78F61004C84A9 /* ColorDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDataFetcher.h; sourceTree = "<group>"; };
-		643864191AB78F61004C84A9 /* ColorDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorDataFetcher.m; sourceTree = "<group>"; };
+		643864181AB78F61004C84A9 /* ColorDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDataProvider.h; sourceTree = "<group>"; };
+		643864191AB78F61004C84A9 /* ColorDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorDataProvider.m; sourceTree = "<group>"; };
 		A115AFE8B5A7CC929AD80984 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B5AC63CF65313712EE047C75 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,8 +112,8 @@
 				643863F41AB78733004C84A9 /* Images.xcassets */,
 				643863F61AB78733004C84A9 /* LaunchScreen.xib */,
 				643863E41AB78733004C84A9 /* Supporting Files */,
-				643864181AB78F61004C84A9 /* ColorDataFetcher.h */,
-				643864191AB78F61004C84A9 /* ColorDataFetcher.m */,
+				643864181AB78F61004C84A9 /* ColorDataProvider.h */,
+				643864191AB78F61004C84A9 /* ColorDataProvider.m */,
 			);
 			path = OFAExample;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 			files = (
 				643863F01AB78733004C84A9 /* SecondViewController.m in Sources */,
 				643863EA1AB78733004C84A9 /* AppDelegate.m in Sources */,
-				6438641A1AB78F61004C84A9 /* ColorDataFetcher.m in Sources */,
+				6438641A1AB78F61004C84A9 /* ColorDataProvider.m in Sources */,
 				643863ED1AB78733004C84A9 /* FirstViewController.m in Sources */,
 				643863E71AB78733004C84A9 /* main.m in Sources */,
 			);
