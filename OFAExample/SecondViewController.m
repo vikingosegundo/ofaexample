@@ -32,8 +32,7 @@
     {
         cell.backgroundColor = color;
     }];
-    self.viewPopulator = [[OFAViewPopulator alloc] initWithParentView:self.collectionView
-                                                    sectionPopulators:@[sectionPopulator]];
+    self.viewPopulator = [[OFAViewPopulator alloc] initWithSectionPopulators:@[sectionPopulator]];
     
 }
 

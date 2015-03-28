@@ -30,7 +30,7 @@
                                                                            } cellConfigurator:^(UIColor *color, UITableViewCell *cell, NSIndexPath *indexPath) {
                                                                                [cell.contentView setBackgroundColor:color];
                                                                            }];
-    self.viewPopulator = [[OFAViewPopulator alloc] initWithParentView:self.tableView sectionPopulators:@[colorPopulator]];
+    self.viewPopulator = [[OFAViewPopulator alloc] initWithSectionPopulators:@[colorPopulator]];
 }
 
 - (void)didReceiveMemoryWarning {
