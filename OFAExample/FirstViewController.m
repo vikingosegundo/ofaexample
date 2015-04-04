@@ -30,6 +30,15 @@
                                                                            } cellConfigurator:^(UIColor *color, UITableViewCell *cell, NSIndexPath *indexPath) {
                                                                                [cell.contentView setBackgroundColor:color];
                                                                            }];
+    
+    colorPopulator.header = ^(NSUInteger section){
+        return ^{
+            UIView *v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 30)];
+            v.backgroundColor = [UIColor cyanColor];
+            return v;
+        }();
+    };
+    
     self.viewPopulator = [[OFAViewPopulator alloc] initWithSectionPopulators:@[colorPopulator]];
 }
 

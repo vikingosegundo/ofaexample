@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Uu9-oZ-Ihh">
-                                <rect key="frame" x="0.0" y="-6" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
@@ -34,10 +34,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="Uu9-oZ-Ihh" secondAttribute="bottom" constant="6" id="Y5m-uy-Iz2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Uu9-oZ-Ihh" secondAttribute="trailing" constant="-16" id="bmJ-QU-zDJ"/>
-                            <constraint firstItem="Uu9-oZ-Ihh" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" constant="-6" id="gPh-AN-D9u"/>
-                            <constraint firstItem="Uu9-oZ-Ihh" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-16" id="rJG-Wx-NUl"/>
+                            <constraint firstAttribute="bottom" secondItem="Uu9-oZ-Ihh" secondAttribute="bottom" id="XQj-5i-YHz"/>
+                            <constraint firstAttribute="trailing" secondItem="Uu9-oZ-Ihh" secondAttribute="trailing" id="gSP-ZT-czS"/>
+                            <constraint firstItem="Uu9-oZ-Ihh" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="po6-yi-7og"/>
+                            <constraint firstItem="Uu9-oZ-Ihh" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="v3z-Ya-LQh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>

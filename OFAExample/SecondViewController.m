@@ -32,6 +32,8 @@
     {
         cell.backgroundColor = color;
     }];
+    
+
     self.viewPopulator = [[OFAViewPopulator alloc] initWithSectionPopulators:@[sectionPopulator]];
     
 }
