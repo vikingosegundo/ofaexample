@@ -18,7 +18,22 @@
 
 @implementation SecondViewController
 
+-(BOOL)prefersStatusBarHidden
+{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    return YES;
+}
+
+
+-(void)loadView
+{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    [super loadView];
+}
+
 - (void)viewDidLoad {
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
@@ -36,6 +51,33 @@
 
     self.viewPopulator = [[OFAViewPopulator alloc] initWithSectionPopulators:@[sectionPopulator]];
     
+    }
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+}
+
+-(void)viewWillLayoutSubviews
+{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+}
+
+-(void)viewDidLayoutSubviews
+{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+}
+
+
+-(void)updateViewConstraints
+{
+    NSLog(@"%@", NSStringFromSelector(_cmd));
+    [super updateViewConstraints];
 }
 
 - (void)didReceiveMemoryWarning {
