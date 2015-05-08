@@ -18,30 +18,13 @@
 
 @implementation SecondViewController
 
--(BOOL)prefersStatusBarHidden
-{
-    NSLog(@"%@", NSStringFromSelector(_cmd));
-    return YES;
-}
-
-
--(void)loadView
-{
-    NSLog(@"%@", NSStringFromSelector(_cmd));
-    [super loadView];
-}
-
 - (void)viewDidLoad {
-    NSLog(@"%@", NSStringFromSelector(_cmd));
-
     [super viewDidLoad];
     
     ColorDataProvider *colorDataProvider = [[ColorDataProvider alloc] init];
     OFASectionPopulator *sectionPopulator = [[OFASectionPopulator alloc] initWithParentView:self.collectionView
                                                                                 dataProvider:colorDataProvider
-                                                                             cellIdentifier:^(id obj, NSIndexPath *indexPath){
-                                                                                 return @"CellSectionColor";
-                                                                             }
+                                                                             cellIdentifier:^(id obj, NSIndexPath *indexPath){return @"CellSectionColor";}
                                                                            cellConfigurator:^(UIColor *color, UICollectionViewCell *cell, NSIndexPath *indexPath)
     {
         cell.backgroundColor = color;
@@ -49,32 +32,5 @@
     
     self.viewPopulator = [[OFAViewPopulator alloc] initWithSectionPopulators:@[sectionPopulator]];
 }
-
--(void)viewWillAppear:(BOOL)animated
-{
-    NSLog(@"%@", NSStringFromSelector(_cmd));
-}
-
--(void)viewDidAppear:(BOOL)animated
-{
-    NSLog(@"%@", NSStringFromSelector(_cmd));
-}
-
--(void)viewWillLayoutSubviews
-{
-    NSLog(@"%@", NSStringFromSelector(_cmd));
-}
-
--(void)viewDidLayoutSubviews
-{
-    NSLog(@"%@", NSStringFromSelector(_cmd));
-}
-
--(void)updateViewConstraints
-{
-    NSLog(@"%@", NSStringFromSelector(_cmd));
-    [super updateViewConstraints];
-}
-
 
 @end
