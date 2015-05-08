@@ -35,7 +35,6 @@
     NSLog(@"%@", NSStringFromSelector(_cmd));
 
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     ColorDataProvider *colorDataProvider = [[ColorDataProvider alloc] init];
     OFASectionPopulator *sectionPopulator = [[OFASectionPopulator alloc] initWithParentView:self.collectionView
@@ -48,10 +47,8 @@
         cell.backgroundColor = color;
     }];
     
-
     self.viewPopulator = [[OFAViewPopulator alloc] initWithSectionPopulators:@[sectionPopulator]];
-    
-    }
+}
 
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -73,16 +70,11 @@
     NSLog(@"%@", NSStringFromSelector(_cmd));
 }
 
-
 -(void)updateViewConstraints
 {
     NSLog(@"%@", NSStringFromSelector(_cmd));
     [super updateViewConstraints];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
