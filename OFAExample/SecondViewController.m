@@ -23,7 +23,7 @@
     
     ColorDataProvider *colorDataProvider = [[ColorDataProvider alloc] init];
     OFASectionPopulator *sectionPopulator = [[OFASectionPopulator alloc] initWithParentView:self.collectionView
-                                                                                dataProvider:colorDataProvider
+                                                                               dataProvider:colorDataProvider
                                                                              cellIdentifier:^(id obj, NSIndexPath *indexPath){return @"CellSectionColor";}
                                                                            cellConfigurator:^(UIColor *color, UICollectionViewCell *cell, NSIndexPath *indexPath)
     {
